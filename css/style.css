@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
+*/
+
+:root {
+  /* Marca (Cores principais e secundarias)*/
+    --brand-100: #effcf5;
+    --brand-200: #8AA787;
+    --brand-400: #698F66;
+    --brand-600: #47663E;
+    --brand-800: #273D25;
+
+    --alt-brand-400: #BB3E46;
+
+  /* Neutras (Texto, Componentes, Background) */
+    --neutral-50:  #f4f9f6; /* background leve*/
+    --neutral-100: #f3f4f6; /* background médio */
+    --neutral-200: #e5e7eb; /* Bordas / Divisores */
+    --neutral-700: #374151; /* Texto oculto */
+    --neutral-800: #272727; /* background escuro*/
+    --neutral-900: #111827; /* Main text / Darkest */
+
+  /* Utilitarias */
+    --utility-success: #16a34a; /* utilidade sucesso*/
+    --utility-warning: #ca8a04; /* utilidade perigo*/
+    --utility-error:   #dc2626; /* utilidade erro*/
+
+  /* Componentes */
+    --bg-main: var(--brand-100);
+    --bg-card: #ffffff;
+
+    --header-button: var(--brand-200);
+
+    --header-main: var(--brand-600);
+    --header-sub:var(--brand-800);
+
+    --text-main: var(--neutral-900);
+    --text-white:var(--neutral-50);
+    --text-accent: var(--brand-800);
+    --text-muted: var(--neutral-700);
+    --link-color: var(--brand-600);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3 {
+    font-family: "Nunito", sans-serif;
+}
+
+h1 {font-size: 52px;
+}
+
+h2 {
+    font-size: 44px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+p, a {
+    font-family: "Atkison-Hyperlegible", sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: var(--link-color);
+}
+
+.button {
+    display: flex;
+    border-radius: 120px;
+    background-color: var(--bg-card);
+    padding: 10px 20px 10px 20px;
+    width: 120px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-main);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    gap: 30px;
+    padding: 0 5% 0 5%;
+    background-color: var(--header-main);
+}
+
+header>.logo {
+    width: 20%;
+}
+
+header>.logo>img {
+    object-fit: contain;
+    height: 7.5vh;
+}
+
+header>.header-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--bg-card);
+    width: 50%;
+    height: 50%;
+    border-radius: 120px;
+
+}
+
+header>.header-search>p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+header>.header-account {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    gap: 20px;
+}
+
+header>.header-account>a {
+    color: var(--bg-card);
+}
+
+header>.header-account>.button {
+    font-weight: 800;
+    background-color: var(--header-button);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--header-sub);
+    gap: 5%;
+}
+
+nav>p {
+    color: var(--text-white);
+    font-weight: 900;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: #16a34a;
+    display: flex;
+}
+
+.alert-status{
+    height: 200px;
+    background-color: red;
+}
+
+.alert{
+    height: 200px;
+    background-color: #16a34a;
+}
+
+.learn {
+    height: 200px;
+    background-color: red;
+}
+
+.info {
+    height: 200px;
+    background-color: #16a34a;
+}
+
+.student {
+    height: 200px;
+    background-color: red;
+    margin-bottom: -25px;
+    z-index: -99;
+}
+main section div p{
+    color: white;
+    font-size: 20px;
+    width: 441px;
+    margin-left: 61.5px;
+    margin-bottom: 34px;
+}
+main section div.imagem-herosection{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+}
+.hero-buttons{
+    display: flex;
+    gap: 36px;
+    margin-left: 60.5px;
+}
+.h1-inicio{
+    color: var(--brand-100);
+    font-size: 54px;
+    margin-top: 43px;
+    margin-left: 56px;
+    margin-bottom: 257px;
+}
+
+
+.footer-wrapper{
+    background-image: url(../assets/img/Ondas\ de\ baixo.svg);
+    z-index: -98;
+    background-repeat: no-repeat;
+
+}
+
+footer {
+    color: #FAF9F6;
+    padding: 60px 80px 30px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px; /* Espaçamento entre a parte de cima e a de baixo */
+    width: 100%;
+}
+
+/* --- Container Superior (Divide Direita e Esquerda) --- */
+footer div.logotipo-suporte{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Coluna da Esquerda */
+footer div.coluna-esquerda{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer div.logotipo img {
+    width: 258px;
+    height: 85;
+}
+
+footer div.logotipo-suporte div.logotipo{
+    display: flex;
+    align-items: center;
+}
+
+footer div.logotipo-suporte div.logotipo div.logo-frase{
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
+
+footer div.logotipo-suporte div.paragrafo p{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d1d1d1; /* Texto levemente acinzentado */
+}
+
+/* Coluna da Direita (Suporte) */
+footer div.logotipo-suporte div.suporte{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 40px;
+}
+
+footer div.logotipo-suporte div.suporte-frase p{
+    font-size: 14px;
+    font-weight: bold;
+    color: #FAF9F6;
+}
+
+footer div.logotipo-suporte div.suporte-link{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer div.logotipo-suporte div.suporte-link a{
+    text-decoration: none;
+    color: #d1d1d1;
+    font-size: 13px;
+    display: block;
+}
+
+footer div.logotipo-suporte div.suporte-link a:hover{
+    text-decoration: underline;
+}
+
+/* --- Container Inferior (Textos do Rodapé) --- */
+footer div.direitos-politica{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: #d1d1d1;
+}
+
+footer div.direitos-politica div.politica a{
+    color: #d1d1d1;
+    text-decoration: none;
+}
+
+footer div.direitos-politica div.politica a:hover{
+    text-decoration: underline;
+}
+
+footer div.direitos-politica div.logo-yt{
+    font-size: 14px;
+    font-weight: bold;
+    color: #FAF9F6;
+}
