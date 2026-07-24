@@ -198,6 +198,118 @@ section{
     background-color: #16a34a;
 }
 
+/* ================= ALERTA ================= */
+
+.alert{
+    display:flex;
+    justify-content:center;
+    padding:40px 5%;
+    background:var(--bg-main);
+}
+
+/* Caixa branca do alerta */
+
+.alerta-box{
+    width:100%;
+    max-width:1200px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 35px;
+
+    border:1.5px solid #d84d52;
+    border-radius:24px;
+
+    background:#fff;
+}
+
+/* Conteúdo esquerdo */
+
+.alerta-content{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.alerta-content h2{
+
+    font-size:18px;
+
+    font-weight:800;
+
+    color:#d84d52;
+
+    margin:0;
+}
+
+/* Texto + bolinha */
+
+.alerta-texto {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+  justify-content: center;
+}
+
+.alerta-texto p{
+
+    font-size:15px;
+
+    color:#333;
+
+    line-height:1.5;
+
+    max-width:620px;
+
+    margin:0;
+}
+
+/* Bolinha vermelha */
+
+.bolinha{
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:#d84d52;
+
+    margin-top:8px;
+}
+
+/* Botão dentro da caixa */
+
+.alert-button{
+
+    background:#c64c53;
+
+    color:#fff;
+
+    padding:14px 24px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+    transition:.3s;
+}
+
+.alert-button:hover {
+  opacity: 0.85;
+  background:#b03c43;
+}
+
+
 .learn {
     height: 200px;
     background-color: red;
