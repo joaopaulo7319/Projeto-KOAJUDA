@@ -184,7 +184,6 @@ nav>p {
 section{
     height: 100vh;
     width: 100%;
-    background-color: #16a34a;
     display: flex;
 }
 
@@ -333,27 +332,29 @@ main section div p{
     margin-left: 61.5px;
     margin-bottom: 34px;
 }
-main section div.imagem-herosection{
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    overflow: hidden;
+main section .imagem-herosection img{
+    width: 629px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 .hero-text{
     display: flex;
     flex-direction: column;
+    gap: 40px;
 }
 .hero-buttons{
     display: flex;
     gap: 36px;
     margin-left: 60.5px;
+    
 }
 .h1-inicio{
-    color: var(--brand-100);
+     color: white;
     font-size: 54px;
     margin-top: 43px;
     margin-left: 56px;
-    margin-bottom: 257px;
+    margin-bottom: 150px;
 }
 
 
@@ -464,4 +465,12 @@ footer div.direitos-politica div.logo-yt{
     font-size: 14px;
     font-weight: bold;
     color: #FAF9F6;
+}
+
+#hero{
+    background-image: url(../assets/Frame\ -ondas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: calc(100vh - 149.73px);
 }
