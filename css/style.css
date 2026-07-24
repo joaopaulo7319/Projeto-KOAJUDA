@@ -165,7 +165,7 @@ header>.header-account>.button {
     background-color: var(--header-button);
 }
 
-nav {
+.nav-home {
     display: flex;
     flex-direction: row;
     align-items: center;
