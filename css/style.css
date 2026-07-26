@@ -249,7 +249,10 @@ main section div.imagem-herosection{
     background-image: url(../assets/Ondas-de-baixo.svg);
     z-index: -98;
     background-repeat: no-repeat;
-
+    background-size: cover; 
+    background-position: top center; 
+    background-repeat: no-repeat; 
+    width: 100%;
 }
 
 footer {
@@ -275,9 +278,10 @@ footer div.coluna-esquerda{
     gap: 25px;
 }
 
-footer div.logotipo img {
+footer div.logotipo img{
     width: 258px;
     height: 85;
+    margin-top: 50px;
 }
 
 footer div.logotipo-suporte div.logotipo{
@@ -294,17 +298,19 @@ footer div.logotipo-suporte div.logotipo div.logo-frase{
 }
 
 footer div.logotipo-suporte div.paragrafo p{
-    font-size: 14px;
+    font-size: 22px;
     line-height: 1.6;
     color: #d1d1d1; /* Texto levemente acinzentado */
 }
 
 /* Coluna da Direita (Suporte) */
-footer div.logotipo-suporte div.suporte{
+.suporte{
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
     padding-right: 40px;
+    margin-top: 30px;
 }
 
 footer div.logotipo-suporte div.suporte-frase p{
@@ -319,6 +325,58 @@ footer div.logotipo-suporte div.suporte-link{
     gap: 15px;
 }
 
+.item-contato{
+    display: flex;        /* Coloca o ícone e o texto lado a lado */
+    align-items: center;  /* Centraliza a altura do ícone com o texto */
+    gap: 12px;            /* Espaço entre o ícone e o texto */
+    margin-bottom: 15px;  /* Espaço entre uma linha e outra */
+    color: #ffffff;       /* Cor da letra (branco) */
+}
+
+/* Deixa os ícones de contato um pouquinho maiores e padronizados */
+.item-contato i {
+    font-size: 20px;
+}
+
+/* Estilo para a área do YouTube e GitHub */
+.redes-sociais {
+    display: flex;
+    gap: 20px;            /* Espaço entre o logo do YouTube e o gatinho do GitHub */
+    margin-top: 40px;     /* Dá um espaço para descolar da lista de cima */
+}
+
+/* Tamanho e cor dos ícones das redes sociais */
+.redes-sociais a {
+    color: #ffffff;       /* Cor dos ícones (branco) */
+    font-size: 28px;      /* Eles costumam ser maiores que os de texto */
+    text-decoration: none;/* Tira aquele sublinhado feio de link */
+}
+
+/* Efeito bônus: quando o mouse passar por cima da rede social, ela muda de cor! */
+.redes-sociais a:hover {
+    color: #cccccc;       /* Fica um cinza clarinho */
+}
+
+.Item-Headfone{
+    display: flex;
+    gap: 10px
+}
+
+.Item-Telefone{
+    display: flex;
+    gap: 10px
+}
+
+.Item-FAQ{
+    display: flex;
+    gap: 9px
+}
+
+.Item-Mapa{
+    display: flex;
+    gap: 15px
+}
+
 footer div.logotipo-suporte div.suporte-link a{
     text-decoration: none;
     color: #d1d1d1;
@@ -331,7 +389,7 @@ footer div.logotipo-suporte div.suporte-link a:hover{
 }
 
 /* --- Container Inferior (Textos do Rodapé) --- */
-footer div.direitos-politica{
+.direitos-politica{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -348,8 +406,6 @@ footer div.direitos-politica div.politica a:hover{
     text-decoration: underline;
 }
 
-footer div.direitos-politica div.logo-yt{
-    font-size: 14px;
-    font-weight: bold;
-    color: #FAF9F6;
+.redes-sociais{
+    padding-bottom: 50px;
 }
