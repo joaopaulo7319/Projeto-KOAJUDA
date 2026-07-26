@@ -1,3 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
+*/
+
+:root {
+  /* Marca (Cores principais e secundarias)*/
+    --brand-100: #effcf5;
+    --brand-200: #8AA787;
+    --brand-400: #698F66;
+    --brand-600: #47663E;
+    --brand-800: #273D25;
+
+    --alt-brand-400: #BB3E46;
+
+  /* Neutras (Texto, Componentes, Background) */
+    --neutral-50:  #f4f9f6; /* background leve*/
+    --neutral-100: #f3f4f6; /* background médio */
+    --neutral-200: #e5e7eb; /* Bordas / Divisores */
+    --neutral-700: #374151; /* Texto oculto */
+    --neutral-800: #272727; /* background escuro*/
+    --neutral-900: #111827; /* Main text / Darkest */
+
+  /* Utilitarias */
+    --utility-success: #16a34a; /* utilidade sucesso*/
+    --utility-warning: #ca8a04; /* utilidade perigo*/
+    --utility-error:   #dc2626; /* utilidade erro*/
+
+  /* Componentes */
+    --bg-main: var(--brand-100);
+    --bg-card: #ffffff;
+
+    --header-button: var(--brand-200);
+
+    --header-main: var(--brand-600);
+    --header-sub:var(--brand-800);
+
+    --text-main: var(--neutral-900);
+    --text-white:var(--neutral-50);
+    --text-accent: var(--brand-800);
+    --text-muted: var(--neutral-700);
+    --link-color: var(--brand-600);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
 section{
     width: 100%;
     display: flex;
@@ -148,11 +206,11 @@ main section div p{
     margin-left: 61.5px;
     margin-bottom: 34px;
 }
-main section div.imagem-herosection{
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    overflow: hidden;
+main section div.imagem-herosection img{
+    width: 629px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 .hero-text{
     display: flex;
@@ -169,4 +227,95 @@ main section div.imagem-herosection{
     margin-top: 43px;
     margin-left: 56px;
     margin-bottom: 257px;
+}
+
+.button {
+    display: flex;
+    border-radius: 120px;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    width: 120px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#hero{
+    background-image: url(../assets/Frame\ -ondas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: calc(100vh - 149.73px);
+}
+
+.nav-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--header-sub);
+    gap: 5%;
+}
+
+nav>a {
+    color: var(--text-white);
+    font-weight: 900;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    gap: 30px;
+    padding: 0 5% 0 5%;
+    background-color: var(--header-main);
+}
+
+header>.logo {
+    width: 20%;
+}
+
+header>.logo>img {
+    object-fit: contain;
+    height: 7.5vh;
+}
+
+header>.header-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--bg-card);
+    width: 50%;
+    height: 50%;
+    border-radius: 120px;
+
+}
+
+header>.header-search>p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+header>.header-account {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    gap: 20px;
+}
+
+header>.header-account>a {
+    color: var(--bg-card);
+}
+
+header>.header-account>.button {
+    font-weight: 800;
+    background-color: var(--header-button);
 }
