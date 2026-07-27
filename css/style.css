@@ -295,35 +295,7 @@ nav>a {
 }
 /* ============ Placeholder ============ */
 
-main section div p{
-    color: white;
-    font-size: 20px;
-    width: 441px;
-    margin-left: 61.5px;
-    margin-bottom: 34px;
-}
-main section div.imagem-herosection{
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    overflow: hidden;
-}
-.hero-text{
-    display: flex;
-    flex-direction: column;
-}
-.hero-buttons{
-    display: flex;
-    gap: 36px;
-    margin-left: 60.5px;
-}
-.h1-inicio{
-    color: var(--brand-100);
-    font-size: 54px;
-    margin-top: 43px;
-    margin-left: 56px;
-    margin-bottom: 257px;
-}
+
 
 
 .footer-wrapper{
