@@ -100,14 +100,14 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--bg-main);
 }
 
 main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header {
@@ -192,110 +192,10 @@ nav>a {
     background-color: #16a34a;
 }
 
-/* ================= ALERTA ================= */
-
-.alert{
-    display:flex;
-    justify-content:center;
-    padding:40px 5%;
-    background:var(--bg-main);
-}
-
-/* Caixa branca do alerta */
-
-.alerta-box{
-    width:100%;
-    max-width:1200px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 35px;
-
-    border:1.5px solid var(--alt-brand-400);
-    border-radius:24px;
-
-    background: var(--neutral-50);
-}
-
-/* Conteúdo esquerdo */
-
-.alerta-content{
-    display:flex;
-    flex-direction:column;
-    gap:8px;
-}
-
-.alerta-content h2{
-    font-size:18px;
-    font-weight:800;
-
-    color: var(--alt-brand-400);
-
-    margin:0;
-}
-
-/* Texto + bolinha */
-
-.alerta-texto {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-}
-
-.alerta-texto p{
-    font-size:15px;
-
-    color: var(--neutral-900);
-
-    line-height:1.5;
-    max-width:620px;
-    margin:0;
-}
-
-/* Bolinha vermelha */
-
-.bolinha{
-    width:8px;
-    height:8px;
-    border-radius:50%;
-
-    background: var(--alt-brand-400);
-
-    margin-top:8px;
-}
-
-/* Botão dentro da caixa */
-
-.alert-button{
-
-    background: var(--alt-brand-400);
-
-    color: var(--neutral-50);
-
-    padding:14px 24px;
-    border-radius:30px;
-    font-size:14px;
-    font-weight:700;
-    white-space:nowrap;
-    transition:.3s;
-}
-
-.alert-button:hover {
-  opacity: 0.85;
-  background:var(--alt-brand-400);
-}
-
-
 /* ============ Placeholder ============ */
 .learn {
     height: 200px;
     background-color: red;
-}
-
-.info {
-    height: 200px;
-    background-color: #16a34a;
 }
 
 .student {
@@ -306,35 +206,6 @@ nav>a {
 }
 /* ============ Placeholder ============ */
 
-main section div p{
-    color: white;
-    font-size: 20px;
-    width: 441px;
-    margin-left: 61.5px;
-    margin-bottom: 34px;
-}
-main section div.imagem-herosection{
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    overflow: hidden;
-}
-.hero-text{
-    display: flex;
-    flex-direction: column;
-}
-.hero-buttons{
-    display: flex;
-    gap: 36px;
-    margin-left: 60.5px;
-}
-.h1-inicio{
-    color: var(--brand-100);
-    font-size: 54px;
-    margin-top: 43px;
-    margin-left: 56px;
-    margin-bottom: 257px;
-}
 
 
 .footer-wrapper{
@@ -371,9 +242,20 @@ footer div.coluna-esquerda{
 }
 
 footer div.logotipo img{
-    width: 258px;
-    height: 85;
-    margin-top: 50px;
+    width: 76.91px;
+    height: 77px;
+}
+
+footer div.logotipo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer div .logotipo p {
+    font-size: 40px;
+    width: 140px;
+    font-weight: bold;
 }
 
 footer div.logotipo-suporte div.logotipo{
@@ -405,6 +287,16 @@ footer div.logotipo-suporte div.paragrafo p{
     margin-top: 30px;
 }
 
+footer .logo-yt {
+    display: flex;
+    gap: 23px;
+    align-items: center;
+
+    & img {
+        object-fit: contain;
+    }
+}
+
 footer div.logotipo-suporte div.suporte-frase p{
     font-size: 14px;
     font-weight: bold;
@@ -425,10 +317,7 @@ footer div.logotipo-suporte div.suporte-link{
     color: #ffffff;       /* Cor da letra (branco) */
 }
 
-/* Deixa os ícones de contato um pouquinho maiores e padronizados */
-.item-contato i {
-    font-size: 20px;
-}
+
 
 /* Estilo para a área do YouTube e GitHub */
 .redes-sociais {
@@ -504,10 +393,3 @@ footer div.direitos-politica div.logo-yt{
     color: var(--neutral-50);
 }
 
-#hero{
-    background-image: url(../assets/Frame\ -ondas.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: calc(100vh - 149.73px);
-}
