@@ -144,15 +144,10 @@ section{
 /* Bolinha vermelha */
 
 .bolinha{
-
     width:8px;
-
     height:8px;
-
     border-radius:50%;
-
     background:#d84d52;
-
     margin-top:8px;
 }
 
@@ -161,19 +156,12 @@ section{
 .alert-button{
 
     background:#c64c53;
-
     color:#fff;
-
     padding:14px 24px;
-
     border-radius:30px;
-
     font-size:14px;
-
     font-weight:700;
-
     white-space:nowrap;
-
     transition:.3s;
 }
 
@@ -214,6 +202,217 @@ main section div.imagem-herosection img{
     margin-bottom: 257px;
 }
 
+/* tutorial - Section 4*/
+
+.tutorial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3rem 2rem;
+    gap: 1rem;
+}
+
+.tutorial > h2 {
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    font-weight: 800;
+    color: var(--neutral-800);
+    text-align: center;
+    margin: 0;
+}
+
+.tutorial > p {
+    font-size: 1rem;
+    color: var(--neutral-700);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.tutorial-card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 64rem;
+}
+
+.tutorial-card-wrapper + .tutorial-card-wrapper {
+    margin-top: 1rem;
+}
+
+.tutorial-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 30rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: var(--brand-800);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.tutorial-card:hover {
+    transform: translateY(0.5rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.tutorial-card img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.tutorial-card:hover img {
+    transform: scale(1.05);
+}
+
+.tutorial-card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem .5rem 2rem;
+    background-color: #263c28;
+    color: #ffffff;
+}
+
+.tutorial-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.tutorial-card-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.tutorial-card-content h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+}
+
+.tutorial-card-description {
+    font-size: 1rem;
+    color: var(--neutral-200);
+    line-height: 1.4;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.3s ease;
+}
+
+.tutorial-card:hover .tutorial-card-description {
+    max-height: 5rem;
+    opacity: 1;
+    z-index: 1;
+    margin-top: 0.75rem;
+}
+
+/* Alunos - Section 6*/
+
+.alunos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: var(--neutral-50);
+}
+
+.alunos > h2 {
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    font-weight: 800;
+    color: var(--brand-800);
+    text-align: center;
+    margin: 0;
+}
+
+.alunos > p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--brand-800);
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.alunos-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 75rem;
+}
+
+.aluno-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    background-color: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.aluno-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.aluno-user img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-info h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--neutral-900);
+    margin: 0;
+}
+
+.user-info span {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 0.875rem;
+    color: var(--neutral-700);
+}
+
+.stars {
+    display: flex;
+    gap: 0.25rem;
+    color: #ff7a00;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
+
+.aluno-text {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 0.875rem;
+    color: var(--neutral-800);
+    line-height: 1.6;
+    margin: 0;
+}
 
 .learn {
     height: 500px;
@@ -270,7 +469,6 @@ main section div.imagem-herosection img{
     position: absolute;
     right: 20px;
     bottom: 20px;
-
     width: 50px;
     height: 50px;
     border: 2px solid #273D25;
