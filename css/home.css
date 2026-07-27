@@ -56,14 +56,10 @@
     flex-shrink: 0;
 }
 
-section{
-    width: 100%;
-    display: flex;
-}
 
 .alert-status{
     height: 200px;
-    background-color: red;
+    background-color: red
 }
 
 .alert{
@@ -576,3 +572,85 @@ header>.header-account>.button {
     background-color: var(--header-button);
 }
 
+.student{
+    background: yellow;
+}
+/* Prévia - Tecnologia não precisa ser complicada. */
+
+.previa{
+
+    background-color: #FAF9F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px;
+    width: 100%;
+}
+
+.previa-image img{
+  width: 500px;
+}
+
+
+.previa-texto >p,h2,.botao{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+
+
+}
+
+
+
+.previa-texto{
+   align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+  
+}
+
+
+.previa-texto h2{
+
+    font-size: 48px;
+
+    color: #273D25;
+
+    margin-bottom: 60px;
+}
+
+.previa-texto p{
+
+     font-size: 20px;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+    color: #273D25;
+}
+
+.botão{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Nunito";
+   
+
+
+
+    padding: 18px 32px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: #273D25;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+   
