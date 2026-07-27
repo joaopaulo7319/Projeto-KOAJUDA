@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ko-Ajuda | Criar conta</title>
+    <link rel="shortcut icon" href="../favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadastrar.css">
+</head>
+
+<body class="register-body">
+    <main class="register-container">
+        <div class="register-card">
+            
+            <div class="register-header">
+                <img src="../assets/brand/Logo.svg" alt="Ko-Ajuda Logo" class="register-logo">
+                <h1>Criar conta</h1>
+            </div>
+
+            <form class="register-form">
+                
+                <div class="input-group">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" placeholder="ex: José Silva" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" min="1" max="120"  placeholder="ex: 62" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="exemplo@gmail.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <div class="input-password-wrapper">
+                        <input type="password" id="senha" placeholder="********" required>
+                        <button type="button" class="toggle-password" aria-label="Mostrar/Ocultar Senha">
+                            <i class="ph ph-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmar-senha">Confirmação de senha</label>
+                    <div class="input-password-wrapper">
+                        <input type="password" id="confirmar-senha" placeholder="********" required>
+                        <button type="button" class="toggle-password" aria-label="Mostrar/Ocultar Senha">
+                            <i class="ph ph-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <label class="checkbox-container">
+                        <input type="checkbox" required>
+                        <span>Eu li e concordo com os Termos de Uso e Privacidade.</span>
+                    </label>
+                    
+                    <label class="checkbox-container">
+                        <input type="checkbox" required>
+                        <span>Declaro que todas as informações fornecidas são verdadeiras.</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-submit"><a href="classroom.html">Entrar</a></button>
+
+                <p class="login-prompt">
+                    Já tem uma conta? <a href="login.html">Faça o login</a>
+                </p>
+
+            </form>
+
+        </div>
+    </main>
+</body>
+
+</html>
