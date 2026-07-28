@@ -407,35 +407,32 @@ footer div.logotipo-suporte div.suporte-link{
 }
 
 .item-contato{
-    display: flex;        /* Coloca o ícone e o texto lado a lado */
-    align-items: center;  /* Centraliza a altura do ícone com o texto */
-    gap: 12px;            /* Espaço entre o ícone e o texto */
-    margin-bottom: 15px;  /* Espaço entre uma linha e outra */
-    color: #ffffff;       /* Cor da letra (branco) */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+    color: #ffffff;
 }
 
-/* Deixa os ícones de contato um pouquinho maiores e padronizados */
-.item-contato i {
+.item-contato i{
     font-size: 20px;
 }
 
-/* Estilo para a área do YouTube e GitHub */
 .redes-sociais {
     display: flex;
-    gap: 20px;            /* Espaço entre o logo do YouTube e o gatinho do GitHub */
-    margin-top: 40px;     /* Dá um espaço para descolar da lista de cima */
+    gap: 20px;
+    margin-top: 40px;
 }
 
-/* Tamanho e cor dos ícones das redes sociais */
 .redes-sociais a {
-    color: #ffffff;       /* Cor dos ícones (branco) */
-    font-size: 28px;      /* Eles costumam ser maiores que os de texto */
-    text-decoration: none;/* Tira aquele sublinhado feio de link */
+    color: #ffffff;
+    font-size: 28px;
+    text-decoration: none;
 }
 
-/* Efeito bônus: quando o mouse passar por cima da rede social, ela muda de cor! */
+
 .redes-sociais a:hover {
-    color: #cccccc;       /* Fica um cinza clarinho */
+    color: #cccccc;
 }
 
 .Item-Headfone{
