@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/koala-logo.svg" alt="Ko-Ajuda Logo" width="120">
+  <img src="./assets/brand/logotype-white.svg" alt="Ko-Ajuda Logo" width="120">
   <h1>KO-AJUDA 🐨</h1>
   <p><strong>Plataforma educativa para inclusão digital, autonomia e proteção contra golpes para a terceira idade.</strong></p>
 
