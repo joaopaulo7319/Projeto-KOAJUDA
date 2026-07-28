@@ -48,7 +48,8 @@
   --link-color: var(--brand-600);
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -167,7 +168,6 @@ html, body {
   background: #b03c43;
 }
 
-
 main section div.imagem-herosection img {
   width: 629px;
   position: absolute;
@@ -182,7 +182,7 @@ main section div.imagem-herosection img {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  overflow: hidden;        
+  overflow: hidden;
   padding-left: 57px;
   padding-top: 49px;
 }
@@ -190,7 +190,7 @@ main section div.imagem-herosection img {
 #hero .imagem-herosection img {
   max-width: 629px;
   width: 45%;
-  height: auto;              
+  height: auto;
   max-height: 90%;
   object-fit: contain;
   position: absolute;
@@ -205,12 +205,12 @@ main section div.imagem-herosection img {
   color: var(--neutral-50);
   font-weight: bold;
 
- & .content {
+  & .content {
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-bottom: 45px;
- }
+  }
 
   & p {
     width: 439.78px;
@@ -523,47 +523,45 @@ main section div.imagem-herosection img {
 }
 
 #cta {
-    max-width: 950px;
-    margin: auto;
-    padding: 80px 0px;
-    
+  max-width: 950px;
+  margin: auto;
+  padding: 80px 0px;
 
-    & .container {
-        border: 3px dashed #273D25;
-        border-radius: 30px;
-        padding: 40px 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 80px;
-        align-items: center;
-        
+  & .container {
+    border: 3px dashed #273d25;
+    border-radius: 30px;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
 
-        & .content {
-            text-align: center;
+    & .content {
+      text-align: center;
 
-            & h2 {
-                font-size: 48px;
-                color: #273D25;
-                margin-bottom: 20px;
-            }
+      & h2 {
+        font-size: 48px;
+        color: #273d25;
+        margin-bottom: 20px;
+      }
 
-            & p {
-                font-size: 20px;
-                color: #000;
-            }
-        }
-
-        & a {
-            background-color: #273D25;
-            color: #FAF9F6;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 20px;
-            padding: 18px 0px;
-            width: 220px;
-            text-align: center;
-        }
+      & p {
+        font-size: 20px;
+        color: #000;
+      }
     }
+
+    & a {
+      background-color: #273d25;
+      color: #faf9f6;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 20px;
+      padding: 18px 0px;
+      width: 220px;
+      text-align: center;
+    }
+  }
 }
 .nav-home {
   display: flex;
@@ -635,7 +633,6 @@ header > .header-account > .button {
   background-color: var(--header-button);
 }
 
-
 .student {
   background: yellow;
 }
@@ -704,249 +701,239 @@ h2,
 }
 
 footer {
-    color: #FAF9F6;
-    padding: 60px 80px 30px 80px;
-    display: flex;
-    flex-direction: column;
-    gap: 70px; /* Espaçamento entre a parte de cima e a de baixo */
-    width: 100%;
+  color: #faf9f6;
+  padding: 60px 80px 30px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px; /* Espaçamento entre a parte de cima e a de baixo */
+  width: 100%;
 }
 
 /* --- Container Superior (Divide Direita e Esquerda) --- */
-footer div.logotipo-suporte{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+footer div.logotipo-suporte {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 /* Coluna da Esquerda */
-footer div.coluna-esquerda{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+footer div.coluna-esquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-footer div.logotipo img{
-    width: 258px;
-    height: 85;
-    margin-top: 50px;
+footer div.logotipo img {
+  width: 258px;
+  height: 85;
+  margin-top: 50px;
 }
 
-footer div.logotipo-suporte div.logotipo{
-    display: flex;
-    align-items: center;
+footer div.logotipo-suporte div.logotipo {
+  display: flex;
+  align-items: center;
 }
 
-footer div.logotipo-suporte div.logotipo div.logo-frase{
-    display: flex;
-    flex-direction: column;
-    font-size: 26px;
-    line-height: 1;
-    letter-spacing: 1px;
+footer div.logotipo-suporte div.logotipo div.logo-frase {
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 1px;
 }
 
-footer div.logotipo-suporte div.paragrafo p{
-    font-size: 22px;
-    line-height: 1.6;
-    color: #d1d1d1; /* Texto levemente acinzentado */
+footer div.logotipo-suporte div.paragrafo p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #d1d1d1; /* Texto levemente acinzentado */
 }
 
-.footer-wrapper{
-    background-image: url(../assets/Ondas-de-baixo.svg);
-    z-index: -98;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: top center; 
-    background-repeat: no-repeat; 
-    width: 100%;
+.footer-wrapper {
+  background-image: url(../assets/Ondas-de-baixo.svg);
+  z-index: -98;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 /* Coluna da Direita (Suporte) */
-.suporte{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    padding-right: 40px;
-    margin-top: 30px;
+.suporte {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 40px;
+  margin-top: 30px;
 }
 
-footer div.logotipo-suporte div.suporte-frase p{
-    font-size: 14px;
-    font-weight: bold;
-    color: #FAF9F6;
+footer div.logotipo-suporte div.suporte-frase p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #faf9f6;
 }
 
-footer div.logotipo-suporte div.suporte-link{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+footer div.logotipo-suporte div.suporte-link {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.item-contato{
-    display: flex;        /* Coloca o ícone e o texto lado a lado */
-    align-items: center;  /* Centraliza a altura do ícone com o texto */
-    gap: 12px;            /* Espaço entre o ícone e o texto */
-    margin-bottom: 15px;  /* Espaço entre uma linha e outra */
-    color: #ffffff;       /* Cor da letra (branco) */
+.item-contato {
+  display: flex; /* Coloca o ícone e o texto lado a lado */
+  align-items: center; /* Centraliza a altura do ícone com o texto */
+  gap: 12px; /* Espaço entre o ícone e o texto */
+  margin-bottom: 15px; /* Espaço entre uma linha e outra */
+  color: #ffffff; /* Cor da letra (branco) */
 }
 
 /* Deixa os ícones de contato um pouquinho maiores e padronizados */
 .item-contato i {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* Estilo para a área do YouTube e GitHub */
 .redes-sociais {
-    display: flex;
-    gap: 20px;            /* Espaço entre o logo do YouTube e o gatinho do GitHub */
-    margin-top: 40px;     /* Dá um espaço para descolar da lista de cima */
+  display: flex;
+  gap: 20px; /* Espaço entre o logo do YouTube e o gatinho do GitHub */
+  margin-top: 40px; /* Dá um espaço para descolar da lista de cima */
 }
 
 /* Tamanho e cor dos ícones das redes sociais */
 .redes-sociais a {
-    color: #ffffff;       /* Cor dos ícones (branco) */
-    font-size: 28px;      /* Eles costumam ser maiores que os de texto */
-    text-decoration: none;/* Tira aquele sublinhado feio de link */
+  color: #ffffff; /* Cor dos ícones (branco) */
+  font-size: 28px; /* Eles costumam ser maiores que os de texto */
+  text-decoration: none; /* Tira aquele sublinhado feio de link */
 }
 
 /* Efeito bônus: quando o mouse passar por cima da rede social, ela muda de cor! */
 .redes-sociais a:hover {
-    color: #cccccc;       /* Fica um cinza clarinho */
+  color: #cccccc; /* Fica um cinza clarinho */
 }
 
-.Item-Headfone{
-    display: flex;
-    gap: 10px
+.Item-Headfone {
+  display: flex;
+  gap: 10px;
 }
 
-.Item-Telefone{
-    display: flex;
-    gap: 10px
+.Item-Telefone {
+  display: flex;
+  gap: 10px;
 }
 
-.Item-FAQ{
-    display: flex;
-    gap: 9px
+.Item-FAQ {
+  display: flex;
+  gap: 9px;
 }
 
-.Item-Mapa{
-    display: flex;
-    gap: 15px
+.Item-Mapa {
+  display: flex;
+  gap: 15px;
 }
 
-footer div.logotipo-suporte div.suporte-link a{
-    text-decoration: none;
-    color: #d1d1d1;
-    font-size: 13px;
-    display: block;
+footer div.logotipo-suporte div.suporte-link a {
+  text-decoration: none;
+  color: #d1d1d1;
+  font-size: 13px;
+  display: block;
 }
 
-footer div.logotipo-suporte div.suporte-link a:hover{
-    text-decoration: underline;
+footer div.logotipo-suporte div.suporte-link a:hover {
+  text-decoration: underline;
 }
 
 /* --- Container Inferior (Textos do Rodapé) --- */
-.direitos-politica{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 11px;
-    color: #d1d1d1;
+.direitos-politica {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: #d1d1d1;
 }
 
-footer div.direitos-politica div.politica a{
-    color: #d1d1d1;
-    text-decoration: none;
+footer div.direitos-politica div.politica a {
+  color: #d1d1d1;
+  text-decoration: none;
 }
 
-footer div.direitos-politica div.politica a:hover{
-    text-decoration: underline;
+footer div.direitos-politica div.politica a:hover {
+  text-decoration: underline;
 }
 
 /* Porque aprender com o koajuda */
 
-div.aprendizagem div.textos{
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
+div.aprendizagem div.textos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.aprendizagem .textos h2{
-
-    font-size: 48px;
+.aprendizagem .textos h2 {
+  font-size: 48px;
 }
 
-.aprendizagem .textos p{
-
-    font-size: 20px;
+.aprendizagem .textos p {
+  font-size: 20px;
 }
 
-.aprendizagem .aba1{
+.aprendizagem .aba1 {
+  background-image: url(../assets/img/Imagem-o\ que\ vamos\ fazer.jpg);
 
-    background-image: url(../assets/img/Imagem-o\ que\ vamos\ fazer.jpg);
+  width: 550px;
 
-    width: 550px;
+  height: 500px;
 
-    height: 500px;
+  display: flex;
 
-    display: flex;
+  flex-direction: column;
 
-    flex-direction: column;
+  justify-content: end;
 
-    justify-content: end;
+  align-items: flex-start;
 
-    align-items: flex-start;
+  margin-left: 180px;
 
-    margin-left: 180px;
-
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
-.Area{
+.Area {
+  margin-bottom: 4rem;
 
-    margin-bottom: 4rem;
+  margin-left: 1rem;
 
-    margin-left: 1rem;
+  width: 460px;
 
-    width: 460px;
-
-    gap: 16px;
+  gap: 16px;
 }
 
-.Area .titulo{
+.Area .titulo {
+  background: #47663e;
 
-    background: #47663E;
+  width: 157.55px;
 
-    width: 157.55px;
+  height: 28px;
 
-    height: 28px;
+  border-radius: 30px;
 
-    border-radius: 30px;
+  justify-content: center;
 
-    justify-content: center;
+  display: flex;
 
-    display: flex;
+  align-items: center;
 
-    align-items: center;
-
-    font-size: 18px;
+  font-size: 18px;
 }
 
-.botaoarea{
+.botaoarea {
+  width: 227.5px;
 
-    width: 227.5px;
+  height: 52px;
 
-    height: 52px;
+  color: white;
 
-    color: white;
+  border-radius: 16px;
 
-    border-radius: 16px;
+  background: #47663e;
 
-    background: #47663E;
-
-    font-size: 18px;
+  font-size: 18px;
 }
-    
-

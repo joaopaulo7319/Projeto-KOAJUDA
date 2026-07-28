@@ -1,66 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ko-Ajuda | Entrar</title>
-    <link rel="shortcut icon" href="../favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/login.css">
-</head>
-<body class="login-body">
+    <link rel="shortcut icon" href="../favicon.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body class="login-body">
     <main class="login-container">
-        <div class="login-card">
-            <div class="login-header">
-                <img src="../assets/brand/Logo.svg" alt="Ko-Ajuda Logo" class="logo">
-                <h1>Entrar</h1>
-            </div>
-            <form class="login-form">
-                <div class="input-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="exemplo@gmail.com" required>
-                </div>
-                <div class="input-group">
-                    <label for="senha">Senha</label>
-                    <div class="input-password-wrapper">
-                        <input type="password" id="senha" placeholder="**********" required>
-                        <button type="button" class="toggle-password" aria-label="Mostrar/Ocultar Senha">
-                            <i class="ph ph-eye"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="form-options">
-                    <label class="remember-me">
-                        <input type="checkbox">
-                        <span>Lembre de mim</span>
-                    </label>
-                    <a href="forgot.html" class="forgot-password">Esqueceu sua senha?</a>
-                </div>
-                <button type="submit" class="btn-submit"><a href="classroom.html">Entrar</a></button>
-                <p class="signup-prompt">
-                    Ainda não tem uma conta? <a href="./cadastrar.html">Crie agora</a>
-                </p>
-                <div class="divider">
-                    <span>OU</span>
-                </div>
-                <div class="social-login">
-                    <button type="button" class="btn-social btn-facebook">
-                        <a href="classroom.html"><img src="../assets/icons/facebook.svg" alt="Facebook"></a>
-                        <span>Continue com Facebook</span>
-                    </button>
-                    <button type="button" class="btn-social btn-google">
-                        <a href="classroom.html"><img src="../assets/icons/google.svg" alt="Google"></a>
-                        <span>Continue com Google</span>
-                    </button>
-                </div>
-            </form>
+      <div class="login-card">
+        <div class="login-header">
+          <img
+            src="../assets/brand/Logo.svg"
+            alt="Ko-Ajuda Logo"
+            class="logo"
+          />
+          <h1>Entrar</h1>
         </div>
+        <form class="login-form">
+          <div class="input-group">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="exemplo@gmail.com"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="senha">Senha</label>
+            <div class="input-password-wrapper">
+              <input
+                type="password"
+                id="senha"
+                placeholder="**********"
+                required
+              />
+              <button
+                type="button"
+                class="toggle-password"
+                aria-label="Mostrar/Ocultar Senha"
+              >
+                <i class="ph ph-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="form-options">
+            <label class="remember-me">
+              <input type="checkbox" />
+              <span>Lembre de mim</span>
+            </label>
+            <a href="forgot.html" class="forgot-password"
+              >Esqueceu sua senha?</a
+            >
+          </div>
+          <button type="submit" class="btn-submit">
+            <a href="classroom.html">Entrar</a>
+          </button>
+          <p class="signup-prompt">
+            Ainda não tem uma conta? <a href="./cadastrar.html">Crie agora</a>
+          </p>
+          <div class="divider">
+            <span>OU</span>
+          </div>
+          <div class="social-login">
+            <button type="button" class="btn-social btn-facebook">
+              <a href="classroom.html"
+                ><img src="../assets/icons/facebook.svg" alt="Facebook"
+              /></a>
+              <span>Continue com Facebook</span>
+            </button>
+            <button type="button" class="btn-social btn-google">
+              <a href="classroom.html"
+                ><img src="../assets/icons/google.svg" alt="Google"
+              /></a>
+              <span>Continue com Google</span>
+            </button>
+          </div>
+        </form>
+      </div>
     </main>
-</body>
-
+  </body>
 </html>
