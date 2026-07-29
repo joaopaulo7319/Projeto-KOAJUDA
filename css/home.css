@@ -225,8 +225,132 @@ main section div.imagem-herosection img {
   font-size: 54px;
 }
 
+section {
+    width: 100%;
+    padding: 5rem 2rem;
+    background-color: var(--neutral-50, #f9f8f6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    max-width: 75rem;
+    width: 100%;
+}
+
+/* --- Container das Imagens Empilhadas --- */
+.about-image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 30rem;
+    height: 22rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Camada do fundo (Verde Escuro - Rotação Inclinada) */
+.image-bg-back {
+    position: absolute;
+    width: 90%;
+    height: 85%;
+    background-color: var(--brand-800, #1e361d);
+    border-radius: 1.5rem;
+    transform: rotate(-6deg);
+    z-index: 1;
+}
+
+/* Camada do meio (Segunda rotação / Sombra) */
+.image-bg-middle {
+    position: absolute;
+    width: 92%;
+    height: 88%;
+    background-color: var(--brand-600, #263c28);
+    border-radius: 1.5rem;
+    transform: rotate(3deg);
+    opacity: 0.8;
+    z-index: 2;
+}
+
+/* Imagem Principal (Frente) */
+.image-front {
+    position: relative;
+    width: 95%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+    transform: rotate(-2deg);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+    z-index: 3;
+    transition: transform 0.3s ease;
+}
+
+.image-front>img {
+    width: 2000px;
+    height: 2000px;
+}
+
+.about-image-wrapper:hover .image-front {
+    transform: rotate(0deg) scale(1.02);
+}
+
+/* --- Conteúdo de Texto --- */
+.about-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 35rem;
+}
+
+.about-content h2 {
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    font-weight: 800;
+    color: var(--brand-800, #1e361d);
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.about-content p {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 1rem;
+    color: var(--neutral-800, #333333);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+}
+
+.btn-about {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.875rem 2rem;
+    background-color: var(--brand-800, #223823);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-about:hover {
+    background-color: var(--brand-600, #172718);
+}
+
+.btn-about:active {
+    transform: scale(0.98);
+}
+
 /* tutorial - Section 4*/
 
+:is(.tutorial, .learn, .aprendizagem) :is(h2, p) {
+  font-weight: 800;
+  color: var(--brand-800);
+}
 .tutorial {
   display: flex;
   flex-direction: column;
@@ -297,7 +421,7 @@ main section div.imagem-herosection img {
 .tutorial-card-content {
   display: flex;
   flex-direction: column;
-  padding: 1rem 1.5rem 0.5rem 2rem;
+  padding: 1rem 1.5rem 1.5rem 2rem;
   background-color: #263c28;
   color: var(--neutral-50);
 }
@@ -444,11 +568,9 @@ main section div.imagem-herosection img {
 
 /* LEAR DA HOME */
 .learn {
-  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
   background-color: #faf9f6;
 }
 
@@ -527,7 +649,7 @@ main section div.imagem-herosection img {
   margin: auto;
   padding: 80px 0px;
 
-  & .container {
+  & .cta-container {
     border: 3px dashed #273d25;
     border-radius: 30px;
     padding: 40px 30px;
@@ -536,7 +658,7 @@ main section div.imagem-herosection img {
     gap: 80px;
     align-items: center;
 
-    & .content {
+    & .cta-content {
       text-align: center;
 
       & h2 {
@@ -632,10 +754,6 @@ header > .header-account > .button {
   font-weight: 800;
   background-color: var(--header-button);
 }
-
-.student {
-  background: yellow;
-}
 /* Prévia - Tecnologia não precisa ser complicada. */
 
 .previa {
@@ -650,14 +768,6 @@ header > .header-account > .button {
 
 .previa-image img {
   width: 500px;
-}
-
-.previa-texto > p,
-h2,
-.botao {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }
 
 .previa-texto {
@@ -862,78 +972,240 @@ footer div.direitos-politica div.politica a:hover {
 
 /* Porque aprender com o koajuda */
 
-div.aprendizagem div.textos {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.aprendizagem,
+.aprendizagem * {
+  box-sizing: border-box;
 }
 
-.aprendizagem .textos h2 {
-  font-size: 48px;
+.aprendizagem {
+  padding: 60px 20px;
 }
 
-.aprendizagem .textos p {
-  font-size: 20px;
+/* Grid geral: título/subtítulo em cima, depois card grande + 2 cards laterais */
+.aprendizagem .textos {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  grid-template-areas:
+    "titulo    titulo"
+    "subtitulo subtitulo"
+    "card      explore"
+    "card      quiz";
+  gap: 20px 24px;
+  max-width: 1160px;
+  margin: 0 auto;
+  width: 100%;
 }
 
+.aprendizagem .textos > h2 {
+  grid-area: titulo;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.aprendizagem .textos > p {
+  grid-area: subtitulo;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* ===== Card grande: Área do aluno ===== */
 .aprendizagem .aba1 {
-  background-image: url(../assets/img/Imagem-o\ que\ vamos\ fazer.jpg);
+  grid-area: card;
+  position: relative;
+  overflow: hidden;
 
-  width: 550px;
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
 
-  height: 500px;
+  background-image: url("../assets/img/Imagem-o que vamos fazer.jpg");
+  background-size: cover;
+  background-position: center;
 
   display: flex;
+  align-items: flex-end;
 
+  border-radius: 24px;
+}
+
+.aprendizagem .aba1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(0, 0, 0, 0) 80%
+  );
+}
+
+.aprendizagem .Area {
+  position: relative;
+  z-index: 1;
+  display: flex;
   flex-direction: column;
+  gap: 12px;
 
-  justify-content: end;
-
-  align-items: flex-start;
-
-  margin-left: 180px;
-
-  border-radius: 30px;
+  width: 100%;
+  padding: 24px 32px 32px 32px;
+  color: #fff;
 }
 
-.Area {
-  margin-bottom: 4rem;
-
-  margin-left: 1rem;
-
-  width: 460px;
-
-  gap: 16px;
-}
-
-.Area .titulo {
-  background: #47663e;
-
-  width: 157.55px;
-
-  height: 28px;
-
+.aprendizagem .Area .titulo {
+  background: #47663E;
+  width: fit-content;
+  padding: 5px 16px;
   border-radius: 30px;
-
-  justify-content: center;
-
   display: flex;
-
   align-items: center;
-
-  font-size: 18px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+  color: #fff;
 }
 
-.botaoarea {
-  width: 227.5px;
+.aprendizagem .Area h3 {
+  font-size: 26px;
+  margin: 0;
+  line-height: 1.25;
+  color: #fff;
+}
 
-  height: 52px;
+.aprendizagem .Area p {
+  font-size: 15px;
+  margin: 0;
+  opacity: 0.9;
+  color: #fff;
+}
 
+.aprendizagem .botaoarea {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
   color: white;
+  border: none;
+  border-radius: 30px;
+  background: #47663E;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 4px;
+}
 
-  border-radius: 16px;
+.aprendizagem .botaoarea:hover {
+  background: #385231;
+}
 
-  background: #47663e;
+/* ===== Cards escuros: Explore os Cursos / Quiz do dia ===== */
+.aprendizagem .textos > div:not(.aba1) {
+  background: #273D25;
+  color: #fff;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
 
-  font-size: 18px;
+.aprendizagem .textos > div:nth-child(4) {
+  grid-area: explore;
+}
+
+.aprendizagem .textos > div:nth-child(5) {
+  grid-area: quiz;
+}
+
+.aprendizagem .textos > div:not(.aba1) i.ph {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.aprendizagem .textos > div:not(.aba1) h3 {
+  font-size: 19px;
+  margin: 0;
+}
+
+.aprendizagem .textos > div:not(.aba1) p {
+  font-size: 14px;
+  opacity: 0.85;
+  margin: 0 0 8px 0;
+}
+
+.aprendizagem .textos > div:not(.aba1) button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  margin-top: auto;
+}
+
+.aprendizagem .textos > div:not(.aba1) button:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsivo ===== */
+
+@media (max-width: 900px) {
+  .aprendizagem .textos {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "titulo"
+      "subtitulo"
+      "card"
+      "explore"
+      "quiz";
+  }
+
+  .aprendizagem .aba1 {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aprendizagem {
+    padding: 32px 12px;
+  }
+
+  .aprendizagem .textos {
+    gap: 16px;
+  }
+
+  .aprendizagem .textos > h2 {
+    font-size: 26px;
+  }
+
+  .aprendizagem .textos > p {
+    font-size: 15px;
+  }
+
+  .aprendizagem .aba1 {
+    min-height: 380px;
+    border-radius: 20px;
+  }
+
+  .aprendizagem .Area {
+    padding: 20px 20px 24px 20px;
+  }
+
+  .aprendizagem .Area h3 {
+    font-size: 20px;
+  }
+
+  .aprendizagem .botaoarea {
+    width: 100%;
+    justify-content: center;
+  }
 }

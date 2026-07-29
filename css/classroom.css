@@ -7,7 +7,8 @@ main {
 .classroom-layout {
   display: flex;
   flex-direction: column;
-  max-height: 100vh;
+  min-height: 100vh;
+  
   background-color: var(--neutral-50);
 }
 
@@ -283,69 +284,64 @@ main {
 /* Footer/Barra de Progresso */
 
 .class-footer {
-  display: flex;
-  z-index: 1;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 4%;
-  background-color: #ffffff;
-  border-top: 1px solid var(--neutral-200);
-  height: 10vh;
-  min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 4%;
+    background-color: #ffffff;
+    border-top: 1px solid var(--neutral-200);
+    height: 10vh;
+    min-height: 70px;
 }
 
 .footer-progress-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-grow: 1;
-  max-width: 60%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+    max-width: 60%;
 }
 
 .footer-progress-info {
-  font-family: "Atkinson-Hyperlegible", sans-serif;
-  font-size: 14px;
-  color: var(--neutral-700);
-  white-space: nowrap;
+    font-family: "Atkinson-Hyperlegible", sans-serif;
+    font-size: 14px;
+    color: var(--neutral-700);
+    white-space: nowrap;
 }
 
 .footer-progress-track {
-  flex-grow: 1;
-  height: 6px;
-  background-color: var(--neutral-200);
-  border-radius: 10px;
-  overflow: hidden;
+    flex-grow: 1;
+    height: 6px;
+    background-color: var(--neutral-200);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .footer-progress-bar {
-  height: 100%;
-  background-color: var(--brand-200);
-  border-radius: 10px;
+    height: 100%;
+    background-color: var(--brand-200);
+    border-radius: 10px;
 }
 
 .footer-progress-percent {
-  font-family: "Nunito", sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  color: var(--brand-800);
-  white-space: nowrap;
+    font-family: "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--brand-800);
+    white-space: nowrap;
 }
 
 .btn-next-class {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background-color: var(--brand-200);
-  color: var(--text-white);
-  border: none;
-  font-weight: 700;
-  font-size: 15px;
-  border-radius: 120px;
-  padding: 12px 24px;
-  cursor: pointer;
-  transition: filter 0.2s ease;
-}
-
-.btn-next-class:hover {
-  filter: brightness(0.9);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--brand-200);
+    color: var(--text-white);
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 120px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: filter 0.2s ease;
 }
