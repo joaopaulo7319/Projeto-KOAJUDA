@@ -1,6 +1,5 @@
 <div align="center">
   <img src="./assets/brand/logotype-white.svg" alt="Ko-Ajuda Logo" width="300">
-  <h1 style=" display: none;">KO-AJUDA 🐨</h1>
   <p><strong>Plataforma educativa para inclusão digital, autonomia e proteção contra golpes para a terceira idade.</strong></p>
 
   [![Objetivos de Desenvolvimento Sustentável](https://img.shields.io/badge/ODS-3%20%7C%204%20%7C%2010%20%7C%2016-green.svg)](#-impacto-social-e-ods)

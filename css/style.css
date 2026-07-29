@@ -183,16 +183,6 @@ nav > a {
   font-weight: 900;
 }
 
-.alert-status {
-  height: 200px;
-  background-color: red;
-}
-
-.alert {
-  height: 200px;
-  background-color: #16a34a;
-}
-
 /* ================= ALERTA ================= */
 
 .alert {
@@ -276,32 +266,6 @@ nav > a {
   background: #b03c43;
 }
 
-/* ============ Placeholder ============ */
-.learn {
-  height: 200px;
-  background-color: red;
-}
-
-.info {
-  height: 200px;
-  background-color: #16a34a;
-}
-
-.student {
-  height: 200px;
-  background-color: red;
-  margin-bottom: -25px;
-  z-index: -99;
-}
-/* ============ Placeholder ============ */
-
-main section div p {
-  color: #ffffff;
-  font-size: 20px;
-  width: 441px;
-  margin-left: 61.5px;
-  margin-bottom: 34px;
-}
 main section div.imagem-herosection {
   display: flex;
   align-items: flex-end;
@@ -314,7 +278,7 @@ main section div.imagem-herosection {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  min-height: 400px;
+  min-height: 15em;
   padding: 40px 5% 0 5%;
   box-sizing: border-box;
   background-color: #2c422f; 
@@ -331,7 +295,7 @@ main section div.imagem-herosection {
 }
 
 .h1-inicio {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 800;
   margin: 0;
 }
@@ -344,16 +308,17 @@ main section div.imagem-herosection {
 
 .content p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.4;
   font-weight: 600;
-  max-width: 380px;
+  max-width: 500px;
 }
 
 #hero .button {
   background: none;
   padding: 0;
   border: none;
+  justify-content: space-between;
 }
 
 #hero .hero-buttons a {
@@ -363,7 +328,7 @@ main section div.imagem-herosection {
   background-color: #ffffff;
   color: #2c422f;
   text-decoration: none;
-  padding: 10px 25px;
+  padding: 20px 50px;
   border-radius: 50px;
   font-weight: 600;
   font-size: 0.85rem;
