@@ -295,40 +295,40 @@ main {
 }
 
 .footer-progress-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-grow: 1;
-    max-width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-grow: 1;
+  max-width: 60%;
 }
 
 .footer-progress-info {
-    font-family: "Atkinson-Hyperlegible", sans-serif;
-    font-size: 14px;
-    color: var(--neutral-700);
-    white-space: nowrap;
+  font-family: "Atkinson-Hyperlegible", sans-serif;
+  font-size: 14px;
+  color: var(--neutral-700);
+  white-space: nowrap;
 }
 
 .footer-progress-track {
-    flex-grow: 1;
-    height: 6px;
-    background-color: var(--neutral-200);
-    border-radius: 10px;
-    overflow: hidden;
+  flex-grow: 1;
+  height: 6px;
+  background-color: var(--neutral-200);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .footer-progress-bar {
-    height: 100%;
-    background-color: var(--brand-200);
-    border-radius: 10px;
+  height: 100%;
+  background-color: var(--brand-200);
+  border-radius: 10px;
 }
 
 .footer-progress-percent {
-    font-family: "Nunito", sans-serif;
-    font-size: 14px;
-    font-weight: 800;
-    color: var(--brand-800);
-    white-space: nowrap;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--brand-800);
+  white-space: nowrap;
 }
 
 .btn-next-class {
