@@ -5,43 +5,69 @@ body {
 #hero {
   background-image: url("../assets/Onda.svg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top center;
   background-size: cover;
 
-  & .container {
-    display: flex;
-    max-width: 992px;
-    margin: auto;
-    padding: 80px 0px;
-    gap: 40px;
-  }
+  display: flex;
+  align-items: center;
 
-  & img {
-    width: 300px;
-    height: 450px;
-  }
+  min-height: 60vh;
+}
 
-  & .content {
-    display: flex;
-    flex-direction: column;
-    color: #faf9f6;
-    gap: 30px;
+#hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
-    & h2 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
+  width: 100%;
+  max-width: 992px;
 
-    & p {
-      width: 659px;
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 32px;
-    }
-    & p:last-child {
-      font-weight: bold;
-    }
-  }
+  margin: auto;
+  padding: 15px 0;
+
+  gap: 20px;
+}
+
+#hero img {
+  margin-top:-10px;
+  width: 245px;
+  height: 360px;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 30px;
+}
+
+#hero .content {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 540px;
+
+  color: #faf9f6;
+  gap: 18px;
+}
+
+#hero .content h2 {
+  margin-bottom: 15px;
+  font-size: 48px;
+  line-height: 1.1;
+
+  margin: 0 0 5px;
+}
+
+#hero .content p {
+  width: 100%;
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+#hero .content p:last-child {
+  font-weight: bold;
 }
 
 #nos-move {
@@ -177,76 +203,88 @@ body {
   }
 }
 #contribuicao {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 65px 0 45px;
+
+  border-top: 2px dashed #b8b8b0;
+  border-bottom: 2px dashed #b8b8b0;
+}
+
+#contribuicao .container {
+  width: 100%;
   max-width: 992px;
+  height: auto;
+  margin: auto;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#contribuicao .title h2 {
+  margin-bottom: 10px;
+
+  color: #273d25;
+  text-align: center;
+  font-family: Nunito, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+#contribuicao .title p {
+  max-width: 660px;
   margin: auto;
 
-  & .container {
-    display: flex;
-    height: 534px;
-    padding: 80px 0px;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  color: #273d25;
+  text-align: center;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
 
-    & .title {
-      & h2 {
-        color: #273d25;
-        text-align: center;
-        font-family: Nunito;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 48px;
-        margin-bottom: 10px;
-      }
+#contribuicao .valores {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 35px;
+}
 
-      & p {
-        color: #273d25;
-        text-align: center;
-        font-family: "Atkinson Hyperlegible";
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 32px;
-        max-width: 660px;
-        margin: auto;
-      }
-    }
+#contribuicao .valor {
+  width: 150px;
+  height: 130px;
+  padding: 15px;
 
-    & .valores {
-      display: flex;
-      gap: 20px;
-      margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-      & .valor {
-        display: flex;
-        box-sizing: border-box;
-        width: 181px;
-        height: 157px;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        border-radius: 10px;
-        border: 3px dashed #273d25;
-        background: #faf9f6;
+  border: 3px dashed #273d25;
+  border-radius: 10px;
+  background-color: #faf9f6;
+}
 
-        & h3 {
-          color: #273d25;
-          font-family: Nunito;
-          font-size: 28px;
-          font-weight: 700;
-          line-height: 1.2;
-          text-align: center;
-          width: 100%;
-          min-width: 0;
-        }
-      }
-    }
+#contribuicao .valor h3 {
+  width: 100%;
+  margin: 0;
 
-    & .seta {
-      font-size: 24px;
-      color: #47663e;
-    }
-  }
+  color: #273d25;
+  text-align: center;
+  font-family: Nunito, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+#contribuicao .seta {
+  margin-top: 5px;
+  color: #47663e;
+  font-size: 26px;
 }
 
 #instituicoes {
