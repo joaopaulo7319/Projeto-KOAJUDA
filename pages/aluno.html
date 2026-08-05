@@ -1,111 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KO-AJUDA | Dashboard</title>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
-    <link rel="stylesheet" href="../css/aluno.css">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link rel="stylesheet" href="../css/aluno.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
 
-<body>
-    
+  <body>
     <!-- Top Header / Navbar -->
     <header class="top-bar">
-        <div class="logo-container">
-            <img src="../assets/brand/logotype-white.svg" alt="Ko-Ajuda Logo" class="top-logo">
-        </div>
+      <div class="logo-container">
+        <img
+          src="../assets/brand/logotype-white.svg"
+          alt="Ko-Ajuda Logo"
+          class="top-logo"
+        />
+      </div>
 
-        <div class="search-container">
-            <input type="text" placeholder="O que você quer saber hoje?">
-            <button class="search-btn" aria-label="Buscar">
-                <i class="ph ph-magnifying-glass"></i>
-            </button>
-        </div>
+      <div class="search-container">
+        <input type="text" placeholder="O que você quer saber hoje?" />
+        <button class="search-btn" aria-label="Buscar">
+          <i class="ph ph-magnifying-glass"></i>
+        </button>
+      </div>
     </header>
 
     <div class="dashboard-layout">
-        
-        <!-- Sidebar Navigation -->
-        <aside class="sidebar">
-            
-            <!-- User Profile Header -->
-            <div class="user-profile">
-                <img src="../assets/img/alunos/4.png" alt="Foto de perfil de Maria Aparecida" class="profile-avatar">
-                <div class="user-name">
-                    <h2>Maria</h2>
-                    <h2>Aparecida</h2>
-                </div>
-            </div>
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar">
+        <!-- User Profile Header -->
+        <div class="user-profile">
+          <img
+            src="../assets/img/alunos/4.png"
+            alt="Foto de perfil de Maria Aparecida"
+            class="profile-avatar"
+          />
+          <div class="user-name">
+            <h2>Maria</h2>
+            <h2>Aparecida</h2>
+          </div>
+        </div>
 
-            <!-- Course Progress Section -->
-            <div class="progress-section">
-                <span class="progress-label">Progresso atual</span>
-                <h3 class="module-title">Módulo 1 · Primeiros passos no celular</h3>
-                
-                <div class="progress-header">
-                    <span>Progresso</span>
-                    <span class="percentage">17%</span>
-                </div>
-                
-                <div class="progress-bar">
-                    <div class="progress-fill" style="width: 17%;"></div>
-                </div>
-                
-                <p class="lessons-count">1 de 6 aulas concluídas</p>
-            </div>
+        <!-- Course Progress Section -->
+        <div class="progress-section">
+          <span class="progress-label">Progresso atual</span>
+          <h3 class="module-title">Módulo 1 · Primeiros passos no celular</h3>
 
-            <!-- Navigation Links -->
-            <nav class="sidebar-nav">
-                <a href="../pages/classroom.html" class="nav-item active">
-                    <i class="ph ph-house"></i>
-                    <span>Início</span>
-                </a>
-                <a href="../pages/classroom.html" class="nav-item">
-                    <i class="ph ph-book-bookmark"></i>
-                    <span>Meus cursos</span>
-                </a>
-                <a href="../pages/classroom.html" class="nav-item">
-                    <i class="ph ph-note-pencil"></i>
-                    <span>Quiz</span>
-                </a>
-                <a href="../pages/classroom.html" class="nav-item">
-                    <i class="ph ph-certificate"></i>
-                    <span>Certificados</span>
-                </a>
-            </nav>
+          <div class="progress-header">
+            <span>Progresso</span>
+            <span class="percentage">17%</span>
+          </div>
 
-            <hr class="sidebar-divider">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 17%"></div>
+          </div>
 
-            <!-- Footer / System Actions -->
-            <div class="sidebar-footer">
-                <a href="#configuracoes" class="nav-item">
-                    <i class="ph ph-gear"></i>
-                    <span>Configurações</span>
-                </a>
-                <a href="../index.html" class="nav-item logout">
-                    <i class="ph ph-sign-out"></i>
-                    <span>Sair</span>
-                </a>
-            </div>
+          <p class="lessons-count">1 de 6 aulas concluídas</p>
+        </div>
 
-        </aside>
+        <!-- Navigation Links -->
+        <nav class="sidebar-nav">
+          <a href="../pages/classroom.html" class="nav-item active">
+            <i class="ph ph-house"></i>
+            <span>Início</span>
+          </a>
+          <a href="../pages/classroom.html" class="nav-item">
+            <i class="ph ph-book-bookmark"></i>
+            <span>Meus cursos</span>
+          </a>
+          <a href="../pages/classroom.html" class="nav-item">
+            <i class="ph ph-note-pencil"></i>
+            <span>Quiz</span>
+          </a>
+          <a href="../pages/classroom.html" class="nav-item">
+            <i class="ph ph-certificate"></i>
+            <span>Certificados</span>
+          </a>
+        </nav>
 
-        <!-- Main Workspace Area -->
-        <main class="main-content">
-            <section class="welcome-banner">
-                <h1>Olá, Maria!</h1>
-                <p>Continue de onde parou.</p>
-            </section>
-        </main>
+        <hr class="sidebar-divider" />
 
+        <!-- Footer / System Actions -->
+        <div class="sidebar-footer">
+          <a href="#configuracoes" class="nav-item">
+            <i class="ph ph-gear"></i>
+            <span>Configurações</span>
+          </a>
+          <a href="../index.html" class="nav-item logout">
+            <i class="ph ph-sign-out"></i>
+            <span>Sair</span>
+          </a>
+        </div>
+      </aside>
+
+      <!-- Main Workspace Area -->
+      <main class="main-content">
+        <section class="welcome-banner">
+          <h1>Olá, Maria!</h1>
+          <p>Continue de onde parou.</p>
+        </section>
+      </main>
     </div>
-
-</body>
-
+    <script src="../script/vlibras.js"></script>
+  </body>
 </html>
