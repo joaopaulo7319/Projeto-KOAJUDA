@@ -1,18 +1,27 @@
+/* --- Reset Básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
-    background-color: var(--neutral-100);
-    color: var(--neutral-800);
+    background-color: #ffffff;
+    color: #2b3d2b;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* --- Top Header --- */
+/* --- Top Header / Navbar --- */
 .top-bar {
-    background-color: #3b5039;
-    height: 4.5rem;
+    background-color: #4b6649;
+    height: 5rem;
     padding: 0 2rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
     z-index: 10;
 }
@@ -20,18 +29,16 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
     width: 16rem;
 }
 
 .top-logo {
-    width: 60%;
+    height: 3rem;
 }
 
 .search-container {
     flex: 1;
-    max-width: 38rem;
-    margin: 0 auto;
+    max-width: 40rem;
     position: relative;
     display: flex;
     align-items: center;
@@ -39,13 +46,13 @@ body {
 
 .search-container input {
     width: 100%;
-    padding: 0.75rem 3rem 0.75rem 1.25rem;
+    padding: 0.8rem 3rem 0.8rem 1.25rem;
     border-radius: 2rem;
     border: none;
     outline: none;
     font-size: 0.95rem;
     background-color: #ffffff;
-    color: var(--neutral-800);
+    color: #333;
 }
 
 .search-container input::placeholder {
@@ -54,32 +61,59 @@ body {
 
 .search-btn {
     position: absolute;
-    right: 0.75rem;
+    right: 1rem;
     background: none;
     border: none;
     font-size: 1.25rem;
-    color: var(--neutral-800);
+    color: #333;
     cursor: pointer;
+}
+
+.top-actions {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 1.5rem;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.help-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #8fa78c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.95rem;
 }
 
 /* --- Dashboard Main Layout --- */
 .dashboard-layout {
     display: flex;
     flex: 1;
+    min-height: calc(100vh - 5rem);
 }
 
 /* --- Sidebar --- */
 .sidebar {
     width: 18rem;
-    background-color: #f1f2f0;
-    border-right: 1px solid var(--neutral-200);
-    padding: 1.5rem;
+    background-color: #fbfbfb;
+    border-right: 1px solid #e0e0e0;
+    padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    flex-shrink: 0;
 }
 
 /* User Profile */
@@ -90,14 +124,14 @@ body {
 }
 
 .profile-avatar {
-    width: 4rem;
-    height: 4rem;
+    width: 4.5rem;
+    height: 4.5rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .user-name h2 {
-    font-size: 1.125rem;
+    font-size: 1.15rem;
     font-weight: 800;
     color: #2b3d2b;
     line-height: 1.2;
@@ -111,15 +145,16 @@ body {
 
 .progress-label {
     font-size: 0.75rem;
-    color: var(--neutral-700);
+    font-weight: 700;
+    color: #4b6649;
     margin-bottom: 0.25rem;
 }
 
 .module-title {
-    font-size: 0.875rem;
+    font-size: 0.85rem;
     font-weight: 800;
     color: #2b3d2b;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     line-height: 1.3;
 }
 
@@ -143,68 +178,79 @@ body {
 
 .progress-fill {
     height: 100%;
-    background-color: #3b5039;
+    background-color: #8fa78c;
     border-radius: 1rem;
 }
 
 .lessons-count {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     color: #888888;
 }
 
 /* Navigation Links */
-.sidebar-nav,
-.sidebar-footer {
+.sidebar-nav {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
 .nav-item {
     display: flex;
     align-items: center;
-    gap: 0.875rem;
-    padding: 0.65rem 0.75rem;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
     text-decoration: none;
     color: #2b3d2b;
-    font-weight: 800;
+    font-weight: 700;
     font-size: 0.95rem;
     border-radius: 0.5rem;
     transition: background-color 0.2s ease;
 }
 
 .nav-item i {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
 }
 
-.nav-item:hover,
-.nav-item.active {
+.nav-item:hover {
     background-color: rgba(0, 0, 0, 0.04);
+}
+
+.nav-item.active {
+    background: none;
+    color: #1a251a;
 }
 
 .sidebar-divider {
     border: none;
-    border-top: 1px solid #dcdcdc;
+    border-top: 1px solid #e0e0e0;
     margin: 0.5rem 0;
 }
 
 /* --- Main Content Area --- */
 .main-content {
     flex: 1;
-    padding: 4rem 3rem;
-    background-color: #fafafa;
-}
-
-.welcome-banner {
+    padding: 3rem 4rem;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    overflow-y: auto;
+}
+
+.welcome-banner {
     text-align: center;
+    margin-bottom: 2.5rem;
 }
 
 .welcome-banner h1 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-weight: 800;
     color: #2b3d2b;
     margin-bottom: 0.5rem;
@@ -212,5 +258,202 @@ body {
 
 .welcome-banner p {
     font-size: 1rem;
-    color: var(--neutral-700);
+    color: #666;
+}
+
+/* Grid de Ações Rápidas */
+.quick-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+.action-card {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    gap: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.action-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.icon-box {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #8fa78c;
+    color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.card-text {
+    flex: 1;
+}
+
+.card-text h3 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #2b3d2b;
+    margin-bottom: 0.2rem;
+}
+
+.card-text p {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.action-card .arrow {
+    font-size: 1.5rem;
+    color: #2b3d2b;
+}
+
+/* Card de Alerta (Vermelho) */
+.alert-card {
+    background-color: #bc3e45;
+    border: none;
+    color: white;
+}
+
+.alert-card .card-text h3, 
+.alert-card .card-text p, 
+.alert-card .arrow {
+    color: white;
+}
+
+.alert-card .bg-white {
+    background-color: white;
+    color: #bc3e45;
+}
+
+/* Seção Meus Cursos */
+.my-courses-section {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 3.5rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    font-size: 1.2rem;
+    color: #2b3d2b;
+    font-weight: 800;
+}
+
+.view-all {
+    color: #2b3d2b;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.course-card {
+    border: 1px solid #eaeaea;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.course-cover {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+}
+
+.bg-green-light { background-color: #8fa78c; }
+.bg-green-dark { background-color: #4b6649; }
+
+.course-info {
+    padding: 1.2rem;
+    background: white;
+}
+
+.module-number {
+    font-size: 0.75rem;
+    color: #666;
+    font-weight: 600;
+}
+
+.course-info h4 {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: #2b3d2b;
+    margin: 0.3rem 0 1rem 0;
+    line-height: 1.3;
+}
+
+.course-progress {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    color: #2b3d2b;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+
+.course-info .progress-bar {
+    margin-bottom: 0.5rem;
+}
+
+.course-info .lessons-count {
+    text-align: right;
+    font-size: 0.7rem;
+    color: #888;
+}
+
+/* Botões Carrossel */
+.nav-arrow {
+    background: white;
+    border: 2px solid #2b3d2b;
+    color: #2b3d2b;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+    flex-shrink: 0;
 }

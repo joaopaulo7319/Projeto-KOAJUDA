@@ -19,100 +19,213 @@
   </head>
 
   <body>
-    <!-- Top Header / Navbar -->
     <header class="top-bar">
-      <div class="logo-container">
-        <img
-          src="../assets/brand/logotype-white.svg"
-          alt="Ko-Ajuda Logo"
-          class="top-logo"
-        />
+  <div class="logo-container">
+    <img src="../assets/brand/logotype-white.svg" alt="Ko-Ajuda Logo" class="top-logo" />
+  </div>
+
+  <div class="search-container">
+    <input type="text" placeholder="O que você quer saber hoje?" />
+    <button class="search-btn" aria-label="Buscar">
+      <i class="ph ph-magnifying-glass"></i>
+    </button>
+  </div>
+
+  <!-- NOVO: Ícones de notificação e ajuda -->
+  <div class="top-actions">
+    <button class="icon-btn" aria-label="Notificações">
+      <i class="ph ph-bell"></i>
+    </button>
+    <button class="help-btn">
+      <i class="ph-fill ph-info"></i> Ajuda
+    </button>
+  </div>
+</header>
+
+<div class="dashboard-layout">
+  <!-- Sidebar Navigation -->
+  <aside class="sidebar">
+    <!-- User Profile Header -->
+    <div class="user-profile">
+      <img src="../assets/img/alunos/4.png" alt="Foto de perfil" class="profile-avatar" />
+      <div class="user-name">
+        <h2>Maria</h2>
+        <h2>Aparecida</h2>
       </div>
-
-      <div class="search-container">
-        <input type="text" placeholder="O que você quer saber hoje?" />
-        <button class="search-btn" aria-label="Buscar">
-          <i class="ph ph-magnifying-glass"></i>
-        </button>
-      </div>
-    </header>
-
-    <div class="dashboard-layout">
-      <!-- Sidebar Navigation -->
-      <aside class="sidebar">
-        <!-- User Profile Header -->
-        <div class="user-profile">
-          <img
-            src="../assets/img/alunos/4.png"
-            alt="Foto de perfil de Maria Aparecida"
-            class="profile-avatar"
-          />
-          <div class="user-name">
-            <h2>Maria</h2>
-            <h2>Aparecida</h2>
-          </div>
-        </div>
-
-        <!-- Course Progress Section -->
-        <div class="progress-section">
-          <span class="progress-label">Progresso atual</span>
-          <h3 class="module-title">Módulo 1 · Primeiros passos no celular</h3>
-
-          <div class="progress-header">
-            <span>Progresso</span>
-            <span class="percentage">17%</span>
-          </div>
-
-          <div class="progress-bar">
-            <div class="progress-fill" style="width: 17%"></div>
-          </div>
-
-          <p class="lessons-count">1 de 6 aulas concluídas</p>
-        </div>
-
-        <!-- Navigation Links -->
-        <nav class="sidebar-nav">
-          <a href="../pages/classroom.html" class="nav-item active">
-            <i class="ph ph-house"></i>
-            <span>Início</span>
-          </a>
-          <a href="../pages/classroom.html" class="nav-item">
-            <i class="ph ph-book-bookmark"></i>
-            <span>Meus cursos</span>
-          </a>
-          <a href="../pages/classroom.html" class="nav-item">
-            <i class="ph ph-note-pencil"></i>
-            <span>Quiz</span>
-          </a>
-          <a href="../pages/classroom.html" class="nav-item">
-            <i class="ph ph-certificate"></i>
-            <span>Certificados</span>
-          </a>
-        </nav>
-
-        <hr class="sidebar-divider" />
-
-        <!-- Footer / System Actions -->
-        <div class="sidebar-footer">
-          <a href="#configuracoes" class="nav-item">
-            <i class="ph ph-gear"></i>
-            <span>Configurações</span>
-          </a>
-          <a href="../index.html" class="nav-item logout">
-            <i class="ph ph-sign-out"></i>
-            <span>Sair</span>
-          </a>
-        </div>
-      </aside>
-
-      <!-- Main Workspace Area -->
-      <main class="main-content">
-        <section class="welcome-banner">
-          <h1>Olá, Maria!</h1>
-          <p>Continue de onde parou.</p>
-        </section>
-      </main>
     </div>
+
+    <hr class="sidebar-divider" />
+
+    <!-- Course Progress Section -->
+    <div class="progress-section">
+      <span class="progress-label">Progresso atual</span>
+      <h3 class="module-title">Módulo 1 - Primeiros passos no celular</h3>
+
+      <div class="progress-header">
+        <span>Progresso</span>
+        <span class="percentage">17%</span>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 17%"></div>
+      </div>
+
+      <p class="lessons-count">1 de 6 aulas concluídas</p>
+    </div>
+
+    <hr class="sidebar-divider" />
+
+    <!-- Navigation Links -->
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="nav-item active">
+        <i class="ph ph-sidebar-simple"></i> <!-- Ajuste o ícone conforme a biblioteca -->
+        <span>Início</span>
+      </a>
+      <a href="../pages/classroom.html" class="nav-item">
+        <i class="ph ph-books"></i>
+        <span>Meus cursos</span>
+      </a>
+      <a href="../pages/" class="nav-item">
+        <i class="ph ph-pencil-simple"></i>
+        <span>Quiz</span>
+      </a>
+      <a href="../pages/" class="nav-item">
+        <i class="ph ph-certificate"></i>
+        <span>Certificados</span>
+      </a>
+    </nav>
+
+    <hr class="sidebar-divider" style="margin-top: auto;" />
+
+    <!-- Footer / System Actions -->
+    <div class="sidebar-footer">
+      <a href="../pages/configAluno.html" class="nav-item">
+        <i class="ph ph-gear"></i>
+        <span>Configurações</span>
+      </a>
+      <a href="../pages/login.html" class="nav-item logout">
+        <i class="ph ph-sign-out"></i>
+        <span>Sair</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Workspace Area -->
+  <main class="main-content">
+    <section class="welcome-banner">
+      <h1>Olá, Maria!</h1>
+      <p>Continue de onde parou.</p>
+    </section>
+
+    <!-- NOVO: Grid de Ações Rápidas -->
+    <section class="quick-actions">
+      <a href="../pages/classroom.html">
+      <div class="action-card">
+        <div class="icon-box"><i class="ph ph-book-open"></i></div>
+        <div class="card-text">
+          <h3>Continuar aprendendo</h3>
+          <p>Módulo 1 — 17% em andamento</p>
+        </div>
+        <i class="ph ph-caret-right arrow"></i>
+      </div>
+      </a>
+
+      <div class="action-card">
+        <div class="icon-box"><i class="ph ph-pencil-simple"></i></div>
+        <div class="card-text">
+          <h3>Quiz do dia</h3>
+          <p>Você ainda não fez hoje!</p>
+        </div>
+        <i class="ph ph-caret-right arrow"></i>
+      </div>
+
+      <div class="action-card">
+        <div class="icon-box"><i class="ph ph-lightbulb"></i></div>
+        <div class="card-text">
+          <h3>Dica do dia</h3>
+          <p>Segurança digital</p>
+        </div>
+        <i class="ph ph-caret-right arrow"></i>
+      </div>
+
+      <div class="action-card alert-card">
+        <div class="icon-box bg-white"><i class="ph ph-chat-circle"></i></div>
+        <div class="card-text">
+          <h3>Ligação suspeita</h3>
+          <p>Verifique uma ligação agora</p>
+        </div>
+        <i class="ph ph-caret-right arrow"></i>
+      </div>
+    </section>
+
+    <!-- NOVO: Seção Meus Cursos -->
+    <section class="my-courses-section">
+      <div class="section-header">
+        <h2>Meus cursos</h2>
+        <a href="#" class="view-all">Ver todos <i class="ph ph-arrow-right"></i></a>
+      </div>
+
+      <div class="carousel-container">
+        <button class="nav-arrow left"><i class="ph ph-arrow-left"></i></button>
+        
+        <div class="courses-grid">
+          <!-- Curso 1 -->
+          <div class="course-card">
+            <div class="course-cover bg-green-light">
+              <i class="ph ph-device-mobile"></i>
+            </div>
+            <div class="course-info">
+              <span class="module-number">Módulo 1</span>
+              <h4>Primeiros passos no celular</h4>
+              <div class="course-progress">
+                <span>Progresso</span>
+                <span>17%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 17%"></div></div>
+              <p class="lessons-count">Aulas: 1/6</p>
+            </div>
+          </div>
+
+          <!-- Curso 2 -->
+          <div class="course-card">
+            <div class="course-cover bg-green-dark">
+              <i class="ph ph-chats"></i>
+            </div>
+            <div class="course-info">
+              <span class="module-number">Módulo 2</span>
+              <h4>WhatsApp e aplicativos</h4>
+              <div class="course-progress">
+                <span>Progresso</span>
+                <span>0%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+              <p class="lessons-count">Aulas: 0/5</p>
+            </div>
+          </div>
+
+          <!-- Curso 3 -->
+          <div class="course-card">
+            <div class="course-cover bg-green-light">
+              <i class="ph ph-globe"></i>
+            </div>
+            <div class="course-info">
+              <span class="module-number">Módulo 3</span>
+              <h4>Internet com segurança</h4>
+              <div class="course-progress">
+                <span>Progresso</span>
+                <span>0%</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill" style="width: 0%"></div></div>
+              <p class="lessons-count">Aulas: 0/5</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="nav-arrow right"><i class="ph ph-arrow-right"></i></button>
+      </div>
+    </section>
+  </main>
+</div>
     <script src="../script/vlibras.js"></script>
   </body>
 </html>
