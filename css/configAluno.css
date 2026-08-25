@@ -1,0 +1,390 @@
+/* ============================================================
+   CONFIGURAÇÕES — página de perfil do aluno
+   Usa as variáveis definidas em style.css (:root)
+   ============================================================ */
+
+body {
+  height: auto;
+  min-height: 100vh;
+  background-color: var(--bg-main);
+}
+
+/* Header: já vem pronto pelo style.css, só garantindo o alinhamento
+   do ícone de busca dentro do input-fake */
+header > .header-search {
+  justify-content: space-between;
+}
+
+header > .header-search i {
+  color: var(--text-muted);
+}
+
+header > .header-account i.ph-bell {
+  font-size: 22px;
+  color: var(--bg-card);
+}
+
+header > .header-account .button {
+  width: auto;
+  gap: 8px;
+  color: var(--brand-800);
+  font-weight: 800;
+}
+
+/* ============================================================
+   LAYOUT GERAL
+   ============================================================ */
+
+.settings-layout {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: calc(100vh - 15vh);
+}
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+
+.sidebar-lessons {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  min-height: 100%;
+  background-color: var(--bg-card);
+  border-right: 1px solid var(--neutral-200);
+  padding: 32px 24px;
+  gap: 32px;
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.sidebar-user-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar-user-name {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--text-main);
+  line-height: 1.25;
+}
+
+/* --- Progresso --- */
+
+.sidebar-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.module-subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.module-title {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.progress-widget {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.progress-percent {
+  color: var(--brand-600);
+}
+
+.progress-track {
+  width: 100%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: var(--neutral-200);
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--brand-600);
+}
+
+.progress-legend {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* --- Menu --- */
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-menu-secondary {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid var(--neutral-200);
+}
+
+.sidebar-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 8px;
+  border-radius: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text-main);
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-menu-item i {
+  font-size: 20px;
+  color: var(--brand-600);
+}
+
+.sidebar-menu-item:hover {
+  background-color: var(--brand-100);
+}
+
+.sidebar-menu-item.active {
+  color: var(--brand-800);
+  font-weight: 800;
+}
+
+/* ============================================================
+   CONTEÚDO — CONFIGURAÇÕES
+   ============================================================ */
+
+.settings-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 24px 80px;
+}
+
+.settings-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 32px;
+}
+
+.settings-heading h1 {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--brand-800);
+}
+
+.settings-heading h1 i {
+  font-size: 30px;
+  color: var(--brand-600);
+}
+
+.settings-heading p {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+/* --- Card --- */
+
+.settings-card {
+  width: 100%;
+  max-width: 480px;
+  background-color: var(--bg-card);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* --- Avatar upload --- */
+
+.avatar-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar-upload-wrapper {
+  position: relative;
+  width: 96px;
+  height: 96px;
+}
+
+.avatar-upload-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-upload-btn {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--bg-card);
+  background-color: var(--brand-600);
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.avatar-upload-btn i {
+  font-size: 15px;
+}
+
+.avatar-upload-hint {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* --- Campos --- */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--neutral-200);
+  background-color: var(--neutral-50);
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-size: 15px;
+  color: var(--text-main);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--brand-400);
+}
+
+.form-group input:disabled {
+  background-color: var(--neutral-100);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.form-hint {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* --- Ações --- */
+
+.form-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.btn-cancel,
+.btn-save {
+  flex: 1;
+  padding: 13px 20px;
+  border-radius: 30px;
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-cancel {
+  background-color: var(--bg-card);
+  border: 1.5px solid var(--neutral-200);
+  color: var(--text-main);
+}
+
+.btn-cancel:hover {
+  background-color: var(--neutral-50);
+}
+
+.btn-save {
+  background-color: var(--brand-600);
+  border: none;
+  color: var(--text-white);
+}
+
+.btn-save:hover {
+  opacity: 0.9;
+}
+
+/* ============================================================
+   RESPONSIVO
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .settings-layout {
+    flex-direction: column;
+  }
+
+  .sidebar-lessons {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--neutral-200);
+  }
+}
+
+@media (max-width: 480px) {
+  .settings-card {
+    padding: 28px 20px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+}

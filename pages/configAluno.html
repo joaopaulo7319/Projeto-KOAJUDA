@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ko-Ajuda — Configurações</title>
+    <link rel="shortcut icon" href="../favicon.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/configAluno.css" />
+  </head>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header>
+      <div class="logo">
+        <img src="../assets/brand/logotype-white.svg" alt="Ko-Ajuda" />
+      </div>
+
+      <div class="header-search">
+        <p>O que você quer saber hoje?</p>
+        <i class="ph ph-magnifying-glass"></i>
+      </div>
+
+      <div class="header-account">
+        <a href="#"><i class="ph ph-bell"></i></a>
+        <a href="#" class="button">
+          <i class="ph ph-info"></i>&nbsp;Ajuda
+        </a>
+      </div>
+    </header>
+
+    <!-- ===== LAYOUT PRINCIPAL ===== -->
+    <div class="settings-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar-lessons">
+        <div class="sidebar-user">
+          <img
+            src="../assets/img/Ilustração perfil.jpg"
+            class="sidebar-user-avatar"
+          />
+          <span class="sidebar-user-name">Seu<br />Nome</span>
+        </div>
+
+        <div class="sidebar-progress">
+          <span class="module-subtitle">Progresso atual</span>
+          <h2 class="module-title">Módulo 1 · Primeiros passos no celular</h2>
+
+          <div class="progress-widget">
+            <div class="progress-info">
+              <span>Progresso</span>
+              <span class="progress-percent">17%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-bar" style="width: 17%"></div>
+            </div>
+            <span class="progress-legend">1 de 6 aulas concluídas</span>
+          </div>
+        </div>
+
+        <nav class="sidebar-menu">
+          <a href="../index.html" class="sidebar-menu-item">
+            <i class="ph ph-squares-four"></i>
+            <span>Início</span>
+          </a>
+          <a href="../pages/classroom.html" class="sidebar-menu-item">
+            <i class="ph ph-book-open"></i>
+            <span>Meus cursos</span>
+          </a>
+          <a href="#" class="sidebar-menu-item">
+            <i class="ph ph-pencil-simple-line"></i>
+            <span>Quiz</span>
+          </a>
+          <a href="#" class="sidebar-menu-item">
+            <i class="ph ph-certificate"></i>
+            <span>Certificados</span>
+          </a>
+        </nav>
+
+        <nav class="sidebar-menu sidebar-menu-secondary">
+          <a href="../pages/configAluno.html" class="sidebar-menu-item active">
+            <i class="ph ph-gear"></i>
+            <span>Configurações</span>
+          </a>
+          <a href="../index.html" class="sidebar-menu-item">
+            <i class="ph ph-sign-out"></i>
+            <span>Sair</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Conteúdo -->
+      <main class="settings-content">
+        <div class="settings-heading">
+          <h1><i class="ph ph-gear"></i>Configurações</h1>
+          <p>Atualize suas informações de perfil</p>
+        </div>
+
+        <div class="settings-card">
+          <form class="settings-form">
+            <div class="avatar-upload">
+              <div class="avatar-upload-wrapper">
+                <img
+                  src="../assets/img/Ilustração perfil.jpg"
+                  alt="Foto de perfil de Maria Aparecida"
+                />
+                <button type="button" class="avatar-upload-btn" aria-label="Trocar foto de perfil">
+                  <i class="ph ph-camera"></i>
+                </button>
+              </div>
+              <span class="avatar-upload-hint">Toque na câmera para trocar a foto</span>
+            </div>
+
+            <div class="form-group">
+              <label for="username">Nome de usuário</label>
+              <input type="text" id="username" name="username" value="Maria Aparecida" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" value="mariaaparecida@email.com" disabled />
+              <span class="form-hint">O e-mail não pode ser alterado por aqui</span>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="btn-cancel">Cancelar</button>
+              <button type="submit" class="btn-save">Salvar alterações</button>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
