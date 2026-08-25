@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KO-AJUDA | Quiz Final - Módulo 1</title>
+
+    <!-- Phosphor Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/quiz.css" />
+  </head>
+
+  <body class="classroom-layout">
+    <!-- Top Header -->
+    <header class="class-header">
+      <div class="logo-area">
+        <img src="../assets/brand/logotype-white.svg" alt="KO-AJUDA Logo" class="logo-img" />
+      </div>
+
+      <h1 class="class-header-title">Primeiros passos no celular</h1>
+
+      <a href="../pages/aluno.html" class="btn-student-area">
+        <span>Área do aluno</span>
+        <i class="ph ph-arrow-right"></i>
+      </a>
+    </header>
+
+    <!-- Main Workspace Container -->
+    <div class="class-container">
+      <!-- Sidebar Navigation -->
+      <aside class="sidebar-lessons">
+        <div class="sidebar-progress">
+          <span class="module-subtitle">Módulo 1</span>
+          <h3 class="module-title">Quiz final</h3>
+
+          <div class="progress-widget">
+            <div class="progress-info">
+              <span>Progresso</span>
+              <span id="sidebar-percent">100%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-bar" id="sidebar-bar" style="width: 100%;"></div>
+            </div>
+            <p class="progress-legend">6 de 6 aulas concluídas</p>
+          </div>
+        </div>
+
+        <!-- Lessons List Menu -->
+        <nav class="lessons-menu">
+          <!-- Lesson 1 -->
+          <div class="lesson-card completed" data-lesson="1">
+            <div class="lesson-status-icon">
+              <i class="ph-fill ph-check-circle"></i>
+            </div>
+            <div class="lesson-meta">
+              <span class="lesson-name">1. Conhecendo o seu celular</span>
+              <span class="lesson-time">5 min</span>
+            </div>
+          </div>
+
+          <!-- Lesson 2 -->
+          <div class="lesson-card completed" data-lesson="2">
+            <div class="lesson-status-icon">
+              <i class="ph-fill ph-check-circle"></i>
+            </div>
+            <div class="lesson-meta">
+              <span class="lesson-name">2. Como ligar e desligar o celular</span>
+              <span class="lesson-time">5 min</span>
+            </div>
+          </div>
+
+          <!-- Lesson 3 -->
+          <div class="lesson-card completed" data-lesson="3">
+            <div class="lesson-status-icon">
+              <i class="ph-fill ph-check-circle"></i>
+            </div>
+            <div class="lesson-meta">
+              <span class="lesson-name">3. Ajustando volume e brilho</span>
+              <span class="lesson-time">5 min</span>
+            </div>
+          </div>
+
+          <!-- Lesson 4 -->
+          <div class="lesson-card completed" data-lesson="4">
+            <div class="lesson-status-icon">
+              <i class="ph-fill ph-check-circle"></i>
+            </div>
+            <div class="lesson-meta">
+              <span class="lesson-name">4. Conectando ao Wi-Fi</span>
+              <span class="lesson-time">6 min</span>
+            </div>
+          </div>
+
+          <!-- Lesson 5 -->
+          <div class="lesson-card completed" data-lesson="5">
+            <div class="lesson-status-icon">
+              <i class="ph-fill ph-check-circle"></i>
+            </div>
+            <div class="lesson-meta">
+              <span class="lesson-name">5. Fazendo ligações e enviando mensagens</span>
+              <span class="lesson-time">6 min</span>
+            </div>
+          </div>
+
+          <!-- Active Quiz Item (6) -->
+          <div class="lesson-card active" data-lesson="6">
+            <div class="lesson-status-icon">
+              <i class="ph ph-shopping-bag-open"></i>
+            </div>
+            <div class="lesson-meta">
+              <span class="lesson-name">6. Quiz final</span>
+              <span class="lesson-time">5 perguntas</span>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Sidebar Motivational Quote -->
+        <div class="sidebar-motivation">
+          <p>Continue assim, você está indo bem!</p>
+        </div>
+      </aside>
+
+      <!-- Central Quiz / Card Content Area -->
+      <main class="class-content">
+        <div class="quiz-card-container">
+          <span class="quiz-tag">Módulo 1 • Quiz final</span>
+          <h2 class="quiz-heading">Vamos testar o que você aprendeu!</h2>
+
+          <div class="quiz-description">
+            <p>Você chegou à etapa final!</p>
+            <p>Responda ao quiz rápido e simples.</p>
+            <p>Ao finalizar, você receberá seu <strong>Certificado de Conclusão</strong>.</p>
+          </div>
+
+          <a href="https://form.typeform.com/to/bBvP9gPS">
+            <button id="btn-start-quiz" class="btn-start-quiz">
+              Responder ao quiz agora
+            </button>
+          </a>
+        </div>
+      </main>
+    </div>
+
+    <!-- Bottom Footer Bar -->
+    <footer class="class-footer">
+      <div class="footer-progress-wrapper">
+        <span class="footer-progress-info">Aula 6 de 6 — Módulo 1</span>
+        <div class="footer-progress-track">
+          <div class="footer-progress-bar" id="footer-bar" style="width: 100%;"></div>
+        </div>
+        <span class="footer-progress-percent">100% do módulo</span>
+      </div>
+
+      <button id="btn-certificate" class="btn-certificate">
+        <span>Certificado</span>
+        <i class="ph ph-download-simple"></i>
+      </button>
+    </footer>
+
+    <script src="../script/classroom.js"></script>
+  </body>
+</html>

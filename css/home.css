@@ -128,6 +128,11 @@ body {
   justify-content: center;
 }
 
+
+.tutorial-card-description {
+  color: #fff !important; 
+}
+
 .alerta-texto p {
   font-size: 15px;
 
@@ -1209,3 +1214,4 @@ footer div.direitos-politica div.politica a:hover {
     justify-content: center;
   }
 }
+
