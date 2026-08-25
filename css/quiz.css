@@ -1,0 +1,353 @@
+:root {
+  --brand-primary: #466543;      /* Main forest green background & header */
+  --brand-dark: #273e26;         /* Dark green active sidebar highlight */
+  --brand-light: #6a8c66;        /* Light green for buttons/bars */
+  --bg-light: #f7f9f6;           /* Main content soft light background */
+  --text-dark: #2b302a;
+  --text-muted: #626961;
+  --text-white: #ffffff;
+  --border-color: #e2e8e0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: "Nunito", sans-serif;
+  height: 100%;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.classroom-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* --- TOP HEADER --- */
+.class-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 32px;
+  background-color: var(--brand-primary);
+  color: var(--text-white);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.logo-area .logo-img {
+  height: 40px;
+}
+
+.class-header-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn-student-area {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: var(--text-white);
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-student-area:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+/* --- MAIN CONTAINER LAYOUT --- */
+.class-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* --- SIDEBAR --- */
+.sidebar-lessons {
+  width: 320px;
+  min-width: 320px;
+  background-color: #ffffff;
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-progress {
+  padding: 24px 20px 16px 20px;
+}
+
+.module-subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.module-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-top: 2px;
+}
+
+.progress-widget {
+  margin-top: 14px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Atkinson-Hyperlegible", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.progress-track {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e5df;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--brand-dark);
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progress-legend {
+  font-family: "Atkinson-Hyperlegible", sans-serif;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* LESSON MENU */
+.lessons-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 16px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.lesson-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.lesson-card.completed .lesson-status-icon {
+  color: var(--brand-light);
+  font-size: 24px;
+}
+
+.lesson-card.completed .lesson-name {
+  font-weight: 700;
+  color: var(--text-dark);
+  font-size: 14px;
+}
+
+.lesson-card.completed .lesson-time {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Active State (Selected Quiz) */
+.lesson-card.active {
+  background-color: var(--brand-dark);
+  color: var(--text-white);
+}
+
+.lesson-card.active .lesson-status-icon {
+  width: 34px;
+  height: 34px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: var(--text-white);
+}
+
+.lesson-card.active .lesson-name {
+  color: var(--text-white);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.lesson-card.active .lesson-time {
+  color: #c4d6c2;
+  font-size: 12px;
+}
+
+/* Sidebar Motivational Text */
+.sidebar-motivation {
+  padding: 16px;
+  text-align: center;
+}
+
+.sidebar-motivation p {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--brand-dark);
+}
+
+/* --- CENTRAL CONTENT AREA --- */
+.class-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background-color: var(--bg-light);
+}
+
+.quiz-card-container {
+  background-color: var(--brand-primary);
+  color: var(--text-white);
+  width: 100%;
+  max-width: 540px;
+  border-radius: 24px;
+  padding: 48px 40px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quiz-tag {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+.quiz-heading {
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+.quiz-description {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.95;
+  margin-bottom: 32px;
+}
+
+.quiz-description strong {
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.btn-start-quiz {
+  background-color: transparent;
+  color: var(--text-white);
+  border: 2px solid var(--text-white);
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-start-quiz:hover {
+  background-color: var(--text-white);
+  color: var(--brand-primary);
+}
+
+/* --- FOOTER BAR --- */
+.class-footer {
+  height: 64px;
+  background-color: #ffffff;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.footer-progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  max-width: 500px;
+}
+
+.footer-progress-info {
+  font-family: "Atkinson-Hyperlegible", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+  white-space: nowrap;
+}
+
+.footer-progress-track {
+  flex: 1;
+  height: 6px;
+  background-color: #e0e5df;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.footer-progress-bar {
+  height: 100%;
+  background-color: var(--brand-light);
+  border-radius: 10px;
+}
+
+.footer-progress-percent {
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--text-dark);
+  white-space: nowrap;
+}
+
+.btn-certificate {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--brand-light);
+  color: var(--text-white);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-certificate:hover {
+  opacity: 0.9;
+}
